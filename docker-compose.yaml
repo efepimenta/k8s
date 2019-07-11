@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  go-test:
+    build: ./go/
+    container_name: go-wserver
+    ports:
+      - 8000:8000
+    # tty: true
+    # environment:
+    #     - GOPATH=/go/src/
+    # volumes:
+#     - ./src:/go/
