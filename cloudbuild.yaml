@@ -5,4 +5,4 @@ steps:
   - name: 'gcr.io/$PROJECT_ID/go-wserver:latest'
     args: ['go', 'test', '-cover', '/go/src/wserver']
 
-images: ['gcr.io/$PROJECT_ID/go-test:latest']
+images: ['gcr.io/$PROJECT_ID/go-wserver:latest']
