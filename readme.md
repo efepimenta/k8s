@@ -12,9 +12,9 @@ https://hub.docker.com/r/efepimenta/go-wserver
 * Criar o Node local
     * ```minikube start```
 * Clonar este repositório
-    * ```git clone .........```
+    * ```git clone https://github.com/efepimenta/k8s.git```
 * Acessar o diretório criado
-    * ```cd ...```
+    * ```cd k8s```
 
 ---
 
