@@ -2,9 +2,10 @@ version: '3'
 
 services:
 
-  go-test:
-    build: ./go/
-    container_name: go-wserver
+  wserver-go:
+    build: .
+    container_name: wserver-go
+    entrypoint: "/go/bin/wserver"
     ports:
       - 8000:8000
     # tty: true

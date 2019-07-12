@@ -37,7 +37,11 @@ kubectl apply -f mysql/service.yaml
 
 ### Criando o pod go
 ```bash
-not yet
+kubectl apply -f go/deployment.yaml
+kubectl apply -f go/service.yaml
+
+minikube service go-service
+
 ```
 
 
@@ -50,6 +54,17 @@ kubectl get persistentvolumes
 kubectl get secrets
 kubectl get pods
 ```
+
+### Apagando tudo
+```bash
+kubectl delete configmaps --all
+kubectl delete deployments --all
+kubectl delete services --all
+kubectl delete persistentvolumes --all
+kubectl delete secrets --all
+kubectl delete pods --all
+```
+
 ### Desligando tudo
 ```bash
 minikube stop
